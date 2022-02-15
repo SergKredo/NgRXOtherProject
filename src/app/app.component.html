@@ -2,7 +2,7 @@
 <button (click)="decrease()">Decrese</button>
 <button (click)="clear()">Clear</button>
 <div>
-    <span>Counter is: {{1}}; Update at: {{3235353535323|date: "yyyy-mm-dd hh:mm:ss"}} </span>
+    <span>Counter is: {{count$|async}}; Update at: {{updateAt$|async|date: "yyyy-mm-dd hh:mm:ss"}} </span>
 </div>
 
 <router-outlet></router-outlet>

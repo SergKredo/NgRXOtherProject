@@ -17,7 +17,7 @@ import {reducers} from '../store/app.reducer';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StoreModule.forRoot(reducers, {
+    StoreModule.forRoot({exampleCount: reducers.count}, {
       runtimeChecks:{
         strictStateImmutability:true,
         strictActionImmutability:true
